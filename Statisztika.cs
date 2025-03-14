@@ -63,6 +63,14 @@ namespace Motorok
             return SumPrices(brandName);
         } 
 
+        public void Sort(){
+            motorok.Sort((x, y) => x.Performance.CompareTo(y.Performance));
+            System.Console.WriteLine("\nTeljesitmeny alapjan rendezett motorok:");
+            foreach (var motor in motorok)
+            {
+                System.Console.WriteLine(motor);
+            }
+        }
         
 
     }

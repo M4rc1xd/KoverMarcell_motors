@@ -13,6 +13,7 @@ namespace Motorok
             System.Console.WriteLine("Legöregebb motor: "+statisztika.Oldest());
             //System.Console.WriteLine("Yamaha motorok ára egyben: "+statisztika.SumPrices("Yamaha") +" EUR");
             System.Console.WriteLine("Yamaha motorok ára egyben: "+statisztika.SumBasedOnBrand("Yamaha") +" EUR");
+            statisztika.Sort();
         }
     }
 }
