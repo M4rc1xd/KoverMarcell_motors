@@ -1,0 +1,31 @@
+namespace Motorok
+{
+    public class Motor
+    {
+        string brand;
+        string name;
+        int releaseYear;
+        double performance;
+        double priceInEur;
+
+        public Motor(string brand, string name, int releaseYear, double performance, double priceInEur)
+        {
+            this.brand = brand;
+            this.name = name;
+            this.releaseYear = releaseYear;
+            this.performance = performance;
+            this.priceInEur = priceInEur;
+        }
+
+        public string Brand { get => brand; }
+        public string Name { get => name; }
+        public int ReleaseYear { get => releaseYear; }
+        public double Performance { get => performance; }
+        public double PriceInEur { get => priceInEur; }
+
+        public override string ToString()
+        {
+            return $"{brand} {name} ({releaseYear}) - {performance} PS - {priceInEur} EUR";
+        }
+    }
+}

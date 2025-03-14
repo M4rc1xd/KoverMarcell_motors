@@ -1,0 +1,16 @@
+brand;name;releaseYear;performance;priceInEur
+Harley-Davidson;CVO Road Glide RR;2025;153;100000
+Bajaj;Pulsar NS400Z;2024;40.2;2173
+Royal Enfield;Guerrilla 450;2024;39.47;5500
+Royal Enfield;Bear 650;2024;47;7000
+Royal Enfield;Shotgun 650;2023;46.40;6800
+Royal Enfield;Scram 440;2024;25.4;4500
+Royal Enfield;Himalayan 450;2023;39.47;5800
+Kawasaki;Ninja 1100 SX;2025;136;15000
+Yamaha;YZF-R3;2025;42;6000
+Yamaha;Bolt R-Spec;2025;65;8999
+Kawasaki;Vulcan S Café;2025;61;8499
+Aprilia;RS 125;2025;15;5000
+Aprilia;RS 457;2025;47;6799
+Aprilia;RS 660;2025;100;11000
+Suzuki;V-Strom 1050;2025;107.4;13000
