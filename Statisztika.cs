@@ -35,7 +35,7 @@ namespace Motorok
         public bool Contains(string motorName){
             foreach (var motor in motorok)
             {
-                if (motor.Brand == motorName)
+                if (motor.Name == motorName)
                 {
                     return true;
                 }
@@ -57,7 +57,17 @@ namespace Motorok
             return oldestMotor;
         }
 
-         
+        public int SumBasedOnBrand(string brandName){
+            double sum = 0;
+            foreach (var motor in motorok)
+            {
+                if (motor.Brand == brandName)
+                {
+                    sum += motor.PriceInEur;
+                }
+            }
+            return Convert.ToInt32(sum);
+        } 
 
     }
 }
