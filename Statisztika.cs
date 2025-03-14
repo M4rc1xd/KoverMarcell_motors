@@ -43,7 +43,21 @@ namespace Motorok
             return false;
         }
 
-        
+        public Motor Oldest(){
+            Motor oldestMotor = null;
+            int legregebbi = int.MaxValue; 
+            foreach (var motor in motorok)
+            {
+                if (motor.ReleaseYear < legregebbi)
+                {
+                    legregebbi = motor.ReleaseYear;
+                    oldestMotor = motor;
+                }
+            }
+            return oldestMotor;
+        }
+
+         
 
     }
 }
