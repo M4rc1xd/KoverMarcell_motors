@@ -23,11 +23,13 @@ namespace Motorok
             }
         }
 
-        public int SumPrices(){
+        public int SumPrices(string brand = null){
             double sum = 0;
             foreach (var motor in motorok)
             {
-                sum += motor.PriceInEur;
+                if (brand == null || motor.Brand == brand){
+                    sum += motor.PriceInEur;
+                }
             }
             return Convert.ToInt32(sum);
         }
@@ -58,16 +60,10 @@ namespace Motorok
         }
 
         public int SumBasedOnBrand(string brandName){
-            double sum = 0;
-            foreach (var motor in motorok)
-            {
-                if (motor.Brand == brandName)
-                {
-                    sum += motor.PriceInEur;
-                }
-            }
-            return Convert.ToInt32(sum);
+            return SumPrices(brandName);
         } 
+
+        
 
     }
 }
